@@ -1,0 +1,6 @@
+title: Agent Contact Card
+context:
+  name: John Smith
+  type: Agent
+  phone: (555) 555-5555
+  avatar: https://assets.aquent.com/svg/aq-no-profile-photo.svg
