@@ -29,7 +29,7 @@ fractal.web.set('static.path', __dirname + '/public');
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Aquent Fractal Demo');
+fractal.set('project.title', 'Aquent Pattern Library');
 fractal.set('project.version', 'v0.1');
 fractal.set('project.author', 'Michael Fienen');
 
