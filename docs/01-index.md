@@ -1,5 +1,7 @@
 ---
-title: Fractal Demo
+title: Overview
 ---
 
-This is your index page. You can edit its contents at `docs/01-index.md`
+This pattern library represents design artifacts for layouts supported by the CSS and HTML at [aquent.com](https://aquent.com).
+
+For questions, please contact the Staffing Technology Web Squad at eiswebdev@aquent.com.
