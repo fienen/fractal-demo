@@ -15,11 +15,16 @@ const fractal = module.exports = require('@frctl/fractal').create();
  */
 const mandelbrot = require('@frctl/mandelbrot');
 const myCustomisedTheme = mandelbrot({
-    panels: ["html", "view", "context", "resources", "info", "notes"],
-    skin: "grey"
+    panels: ["html", "context", "resources", "info", "notes"],
+    skin: "grey",
+    styles: [
+      "https://aquent.com/css/main.css",
+      "default"
+    ]
 });
 
 fractal.web.theme(myCustomisedTheme);
+fractal.web.set('static.path', __dirname + '/public');
 
 /*
  * Give your project a title.
