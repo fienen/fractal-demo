@@ -1,0 +1,21 @@
+<div class="full-width-block alt-bands group">
+  <!-- Begin #dotParse("//assets.aquent.com/vtl/components/accessibility-links.vtl") -->
+  <nav id="index-1">
+    <a class="show-for-sr show-on-focus" href="#index-2">Skip To Next Content</a>
+  </nav>
+  <!-- End accessibility-links.vtl -->
+
+  <div class="row column">
+    <div class="side-by-side">
+      <!-- Begin left renderSideBySide() macro -->
+      <div class="{{ panelLeftType }} bg-cover" style="background-image: url({{ panelLeft }}/500w);" data-interchange="[{{ panelLeft }}/500w, small],[{{ panelLeft }}/800w, medium],[{{ panelLeft }}/650w, large]"></div>
+      <!-- End left renderSideBySide() macro -->
+
+      <!-- Begin right renderSideBySide() macro -->
+      <div class="{{ panelRightType }} padding-horizontal-2 padding-vertical-3">
+        {{{ panelRight }}}
+      </div>
+      <!-- End right renderSideBySide() macro -->
+    </div>  <!-- .side-by-side -->
+  </div>  <!-- .row.column -->
+</div>  <!-- .full-width-block.alt-bands.group -->
