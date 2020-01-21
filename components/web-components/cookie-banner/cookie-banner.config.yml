@@ -1,0 +1,5 @@
+title: Cookie Compliance Banner
+context:
+    accept-text: Accept Cookies
+    decline-text: Decline Non-essential Cookies
+    cookie-href: /cookies
