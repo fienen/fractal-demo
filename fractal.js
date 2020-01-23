@@ -25,6 +25,7 @@ const myCustomisedTheme = mandelbrot({
 
 fractal.web.theme(myCustomisedTheme);
 fractal.web.set('static.path', __dirname + '/public');
+fractal.web.set('builder.dest', __dirname + '/dist');
 
 /*
  * Give your project a title.
