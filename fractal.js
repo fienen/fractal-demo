@@ -25,7 +25,7 @@ const myCustomisedTheme = mandelbrot({
 
 fractal.web.theme(myCustomisedTheme);
 fractal.web.set('static.path', __dirname + '/public');
-fractal.web.set('builder.dest', __dirname + '/dist');
+fractal.web.set('builder.dest', __dirname + '/docs');
 
 /*
  * Give your project a title.
@@ -42,7 +42,7 @@ fractal.components.set('path', path.join(__dirname, 'components'));
 /*
  * Tell Fractal where to look for documentation pages.
  */
-fractal.docs.set('path', path.join(__dirname, 'docs'));
+fractal.docs.set('path', path.join(__dirname, 'pages'));
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
