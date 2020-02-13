@@ -52,7 +52,7 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 /*
  * Set up Nunjucks for more powerful documentation rendering
  */
-// fractal.docs.engine('@frctl/nunjucks');
+fractal.docs.engine('@frctl/nunjucks');
 // fractal.components.set('ext', '.nunj');
 
 /*
