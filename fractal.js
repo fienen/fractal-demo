@@ -15,11 +15,12 @@ const fractal = module.exports = require('@frctl/fractal').create();
  */
 const mandelbrot = require('@frctl/mandelbrot');
 const myCustomisedTheme = mandelbrot({
-    panels: ["html", "context", "resources", "info", "notes"],
+    panels: ["notes", "html", "info", "context", "resources"],
     skin: "grey",
     styles: [
       "https://aquent.com/css/main.css",
-      "default"
+      "default",
+      "/public/css/styles.css"
     ]
 });
 
