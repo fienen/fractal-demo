@@ -10,7 +10,7 @@ context:
         hex: "#ff6720"
         rgb: "255,103,32"
       Primary Cream:
-        var: "cream"
+        var: "$cream"
         hex: "#f3f0eb"
         rgb: "243,240,235"
     Warm Neutrals:
