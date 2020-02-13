@@ -11,7 +11,7 @@ context:
         rgb: "255,103,32"
       Primary Cream:
         var: "cream"
-        hex: "#f3foeb"
+        hex: "#f3f0eb"
         rgb: "243,240,235"
     Warm Neutrals:
       Neutral 1:
@@ -57,7 +57,7 @@ context:
         rgb: "0,156,222"
       Dark Orange:
         var: "$dark-orange"
-        hex: "fe5000"
+        hex: "#fe5000"
         rgb: "254,80,0"
       Light Orange:
         var: "$light-orange"
