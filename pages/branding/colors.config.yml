@@ -7,7 +7,7 @@ context:
         rgb: "26,25,25"
       Primary Orange:
         var: "$orange"
-        hex: "#ff6720"
+        hex: "#ff5f14"
         rgb: "255,103,32"
       Primary Cream:
         var: "$cream"
@@ -51,6 +51,10 @@ context:
         var: "$neutral-black"
         hex: "#222"
         rgb: "34,34,34"
+      White:
+        var: "$White"
+        hex: "#fff"
+        rgb: "255,255,255"
       Blue:
         var: "$blue"
         hex: "#009cde"

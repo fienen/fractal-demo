@@ -18,11 +18,12 @@
 
 .color span {
     color:#818181;
+    display: block;
 }
 
 .grid-list {
     display:grid;
-    grid-template-columns:repeat(5, 20%);
+    grid-template-columns:repeat(4, 25%);
     grid-gap:.5rem;
 }
 
