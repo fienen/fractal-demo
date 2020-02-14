@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono|PT+Serif&display=swap');
+@import url('https://use.typekit.net/pzp3axi.css');
+
 .color::before {
     background-color:currentColor;
     border-radius: 1rem;
@@ -7,7 +10,7 @@
     width:100%;
 }
 
-.color pre {  
+.color pre {
     background-color:#F7F7F5;
     color:#414141;
     padding:8px 12px;
@@ -29,8 +32,8 @@
     -webkit-box-direction:normal;
     display:-webkit-box;
     display:-ms-flexbox;
-    display:flex;    
+    display:flex;
     -ms-flex-direction:column;
     flex-direction:column;
-    text-align:center;    
+    text-align:center;
 }
