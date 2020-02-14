@@ -42,6 +42,10 @@ context:
         var: "$neutral-7"
         hex: "#bfb8af"
         rgb: "191,184,175"
+      Neutral 8:
+        var: "$neutral-8"
+        hex: "#d7d2cb"
+        rgb: "215,210,203"
     Extended Palette:
       Rich Black:
         var: "$black"
