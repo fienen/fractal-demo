@@ -56,7 +56,7 @@ context:
         hex: "#222"
         rgb: "34,34,34"
       White:
-        var: "$White"
+        var: "$white"
         hex: "#fff"
         rgb: "255,255,255"
       Blue:
