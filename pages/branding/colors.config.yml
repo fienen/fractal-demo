@@ -1,8 +1,8 @@
 context:
   colors:
     Primary:
-      Warm Black:
-        var: "$warm-black"
+      Primary Black:
+        var: "$primary-black"
         hex: "#1a1919"
         rgb: "26,25,25"
       Primary Orange:
@@ -47,7 +47,7 @@ context:
         hex: "#d7d2cb"
         rgb: "215,210,203"
     Extended Palette:
-      Rich Black:
+      Black:
         var: "$black"
         hex: "#000"
         rgb: "0,0,0"
