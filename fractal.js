@@ -18,7 +18,7 @@ const myCustomisedTheme = mandelbrot({
     panels: ["notes", "html", "info", "context", "resources"],
     skin: "grey",
     styles: [
-      "https://aquent.com/css/main.css",      
+      // "https://aquent.com/css/main.css",      
       "/css/styles.css",
       "default"
     ]
