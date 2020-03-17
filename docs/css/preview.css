@@ -10,6 +10,6 @@
 
 .yield {
   margin: 0 auto;
+  max-width: 90%;
   min-width: 600px;
-  width: max-content;
 }
