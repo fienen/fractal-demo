@@ -154,8 +154,11 @@
 <p>By default, you should include a <code>&lt;thead&gt;</code> that is used to provide labels to the columns on your table. Normally, this will be visible, but it can also be hidden like other content in an accessible way by including the <code>show-for-sr</code> class on the element.</p>
 <h2 id="displaying-calculations">Displaying calculations</h2>
 <p>The first <code>&lt;td&gt;</code> in each row is intended to be a calculation value displayed to the user. With no classes, it will effectively be nothing more than a right-aligned cell. Each cell can use a calculation class to add the respective operator symbol to the leading edge of the cell: <code>calc-add</code>, <code>calc-divide</code>, <code>calc-multiply</code>, and <code>calc-subtract</code>.</p>
+<p><strong>NOTE:</strong> No <em>actual</em> calculation happens programmatically. The values and totals shown must all be manually entered. The markup is fully garbage-in/garbage-out.</p>
 <h2 id="totalconclusion-row">Total/Conclusion row</h2>
 <p>If you would like to add emphasis to the final row of the table, place the <code>total</code> class on the last <code>&lt;tr&gt;</code> of the table. This isn’t done automatically just in case there is a scenario where tables are desired that don’t immediately reflect a conclusion (e.g. consecutive tables that result in a singular outcome).</p>
+<h2 id="tables-without-values">Tables without values</h2>
+<p>In some cases, you may need to have a table that implies qualitative math (e.g. calculating abstract values for demonstration purposes). This is also supported by simply leaving the first cell in each row empty (the cell must exist, and still takes a <code>calc-</code> class if needed), and as a consequence, the spacing will tighten up to show the descriptions closer in space to the mathematical operators (if used). This pattern is all-or-nothing, which is to say that if one value is included, it will affect the layout of the overall table (because it will cause the cell to go back to the “normal” width, which affects the whole first column).</p>
 
         
     </div>
@@ -198,6 +201,31 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"total"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>$1,234,567<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Use <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.total<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> on a row to bold the whole thing<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"math"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>A math table without <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>values<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"calc-add"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Works the same, leave first cell empty.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"total"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Spacing is tighter when no values are entered<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></pre>
